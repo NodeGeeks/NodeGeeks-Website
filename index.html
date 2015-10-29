@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description"
+          content="NodeGeeks is a small software development company based out of Fresno CA, and Colorado Springs CO. Focusing on pure JavaScript and NodeJS development, allowing your applications to be cross platform compatible anywhere, anytime, for less then what you would pay to have then developed in there Native Languages.">
+    <meta name="author" content="NodeGeeks">
+    <link rel="icon" href="ico/favicon.png">
+
+    <title>NodeGeeks LLC - JavaScript and NodeJS Software Development</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href="fonts/open-sans/stylesheet.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- Font line icons -->
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Overwrite bootstrap styles -->
+    <link href="css/overwrite.css" rel="stylesheet">
+
+    <!-- Owl carousel -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+
+    <!-- Diamonds -->
+    <link href="css/diamonds.css" rel="stylesheet">
+
+    <!-- animate -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- flexslider -->
+    <link href="css/flexslider.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Theme skins -->
+    <link href="skins/default.css" rel="stylesheet">
+
+    <!--[if IE 8]>
+    <link href="css/style.ie.css" rel="stylesheet">
+    <![endif]-->
+</head>
+
+<body>
+<!-- Start preloading -->
+<div id="loading" class="loading-invisible">
+    <i class="fa fa-refresh fa-4x fa-spin"></i><br/>
+
+    <p>Please wait...</p>
+</div>
+<script type="text/javascript">
+    document.getElementById("loading").className = "loading-visible";
+    var hideDiv = function () {
+        document.getElementById("loading").className = "loading-invisible";
+    };
+    var oldLoad = window.onload;
+    var newLoad = oldLoad ? function () {
+        hideDiv.call(this);
+        oldLoad.call(this);
+    } : hideDiv;
+    window.onload = newLoad;
+</script>
+<!-- End preloading -->
+
+<!-- Start header -->
+<header>
+    <!-- Start navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/NodeGeeks%20Logo.png" class="scroller-logo" alt=""/>
+                    <img src="img/NodeGeeks%20Logo.png" class="default-logo" alt=""/>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="slideToHome" class="selected">Home</a></li>
+                    <li><a href="#description" class="slideToDescription">Description</a></li>
+                    <li><a href="#about" class="slideToAbout">About</a></li>
+                    <li><a href="#whyus" class="slideToWhyUs">Why us?</a></li>
+                    <li><a href="#pricing" class="slideToPricing">Pricing</a></li>
+                    <li><a href="#quote" class="slideToContact">Quote</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#" class="login">Login</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!-- End navbar -->
+</header>
+<!-- End header -->
+
+<!-- Start home -->
+<section id="home" class="home-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 marginbot40">
+                <img src="img/slider/mobile-phone.png" class="img-responsive" alt=""/>
+            </div>
+            <div class="col-md-6 home-container">
+                <div class="headline">
+                    <h1>JavaScript and NodeJS Development</h1>
+
+                    <p> From Simple to Sophisticated</p>
+                </div>
+                <p>
+                    Developing, Hosting and Maintaining your website or application
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End home -->
+
+<!-- Start wrapper -->
+<div id="wrapper">
+    <!-- Start intro -->
+    <div id="intro" class="dark-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-10 col-md-offset-1">
+                    <h4 class="headtitle">
+                        Developing & maintaining startup's around the world
+                    </h4>
+
+                    <p>Get a free quote and consultation today!</p>
+                    <a href="#quote" class="btn btn-primary btn-lg">Get a quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End intro -->
+
+    <!-- Start description -->
+    <section id="description" class="half-wrapper">
+        <div class="container half-full">
+            <div class="row">
+                <div class="col-md-6 half-column set-left">
+                    <div class="half-col-containt">
+                        <div class="heading">
+                            <h5>NodeGeeks</h5>
+
+                            <p>
+                                Desktop, Web and Mobile Software Development
+                            </p>
+                            <span></span>
+                        </div>
+                        <p>
+                            From simple websites to sophisticated real time applications that control irrigation systems.
+                            We have all the resources to design, build and maintain your vision. Here's a little taste
+                            of what our NodeGeeks will do for you.
+                        </p>
+                        <ul class="check-list">
+                            <li><i class="fa fa-check"></i> Simple Websites</li>
+                            <li><i class="fa fa-check"></i> Content Management Systems</li>
+                            <li><i class="fa fa-check"></i> Irrigation Control Systems</li>
+                            <li><i class="fa fa-check"></i> Social Networking Platforms</li>
+                            <li><i class="fa fa-check"></i> Mobile Apps and Games</li>
+                        </ul>
+                        <p class="btn-horizontal">
+                            <a href="#" class="btn btn-primary">Portfolio</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 half-column set-right">
+                    <div class="fluid">
+                        <img src="img/Nautilus System iPad and iMac.png" class="img-responsive" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End description -->
+
+    <div class="clearfix"></div>
+
+    <!-- Start client -->
+    <div id="client">
+        <div class="parallax text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading centered">
+                            <h5>Our clients</h5>
+
+                            <p>
+                                Our amazing clients
+                            </p>
+                            <span></span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <!--<div id="owl-client" class="owl-carousel">-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo01.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo02.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo03.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo04.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo05.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo01.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo02.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo03.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo04.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo05.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo01.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo02.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo03.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo04.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--<div class="client-logo">-->
+                        <!--<a href="#"><img src="img/clients/logo05.png" alt=""/></a>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End client -->
+
+    <!-- Start about -->
+    <section id="about" class="wrapper">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="heading centered">
+                        <h5>About us</h5>
+
+                        <p>
+                            Meet our NodeGeeks!
+                        </p>
+                        <span></span>
+                    </div>
+                    <!-- Start team -->
+                    <div class="diamondswrap">
+                        <div class="item">
+                            <img src="img/team/Aaron Russell.jpg" class="img-responsive" alt=""/>
+                            <img src="img/bg-overlay.png" class="img-responsive" alt=""/>
+
+                            <div class="content">
+                                <h6 class="name"><a href="#">Aaron Russell</a></h6>
+
+                                <p class="team-position">CEO / Developer</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/team/Karson Madden.jpg" class="img-responsive" alt=""/>
+                            <img src="img/bg-overlay.png" class="img-responsive" alt=""/>
+
+                            <div class="content">
+                                <h6 class="name"><a href="#">Karson Madden</a></h6>
+
+                                <p class="team-position">Dev / Designer</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/team/team3.jpg" class="img-responsive" alt=""/>
+                            <img src="img/bg-overlay.png" class="img-responsive" alt=""/>
+
+                            <div class="content">
+                                <h6 class="name"><a href="#">Jason Radcliffe</a></h6>
+
+                                <p class="team-position">Game Developer</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/team/team4.jpg" class="img-responsive" alt=""/>
+                            <img src="img/bg-overlay.png" class="img-responsive" alt=""/>
+
+                            <div class="content">
+                                <h6 class="name"><a href="#">Edward Soares</a></h6>
+
+                                <p class="team-position">Server Admin / Dev</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/team/team4.jpg" class="img-responsive" alt=""/>
+                            <img src="img/bg-overlay.png" class="img-responsive" alt=""/>
+
+                            <div class="content">
+                                <h6 class="name"><a href="#">Franklin Russell</a></h6>
+
+                                <p class="team-position">Developer</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/team/team5.jpg" class="img-responsive" alt=""/>
+                            <img src="img/bg-overlay.png" class="img-responsive" alt=""/>
+
+                            <div class="content">
+                                <h6 class="name"><a href="#">Jeremy Russell</a></h6>
+
+                                <p class="team-position">Content Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End team -->
+                    <p>
+                        We have compiled a team of some of the greatest alike minded developers and designers that
+                        you've never even heard of!
+                    </p>
+                    <a href="#quote" class="btn btn-primary">Get in touch with us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End about -->
+
+    <!-- Start testimoni -->
+    <div id="testimoni" class="dark-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <p class="icon-testimoni"><i class="fa fa-quote-left"></i></p>
+
+                    <div id="sync1" class="owl-carousel content-testimoni">
+                        <div class="item">
+                            <p>NodeGeeks has been a huge asset to our operation. They recognized our vision and <strong>
+                                executed perfectly</strong>, often recognizing opportunities for optimization and
+                                improvements we never realized were possible. Their grasp of the latest languages and
+                                techniques has proved to be a tremendous benefit to our <strong>real time application</strong>.</p>
+
+                            <p class="name">Dominic Farinelli - <a href="http://nautsys.net">CEO. Nautilis Systems LLC.</a></p>
+                        </div>
+                        <div class="item">
+                            <p>Per id error ceteros conclusionemque. Qui no partem complectitur. An usu paulo option
+                                tincidunt. Ekek Sabun Giv</p>
+
+                            <p class="name">Alex Gonzales - <a href="http://quizleak.com">CEO Quizleak</a></p>
+                        </div>
+                    </div>
+                    <div class="author-testimoni">
+                        <div id="sync2" class="owl-carousel">
+                            <div class="item">
+                                <img src="img/people/1.png" width="40" height="40" alt=""/>
+                            </div>
+                            <div class="item">
+                                <img src="img/people/2.png" width="40" height="40" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End testimoni -->
+
+    <!-- Start why us -->
+    <section id="whyus" class="half-wrapper">
+        <div class="container half-full">
+            <div class="row">
+                <div class="col-md-6 half-column set-left">
+                    <div class="fluid">
+                        <div class="imac-wrapper">
+                            <div class="imac-slider">
+                                <div class="imac-device">
+                                    <ul class="slides">
+                                        <li><img src="img/imac-slide/slide1.jpg" class="img-responsive" alt=""/></li>
+                                        <li><img src="img/imac-slide/slide2.jpg" class="img-responsive" alt=""/></li>
+                                        <li><img src="img/imac-slide/slide3.jpg" class="img-responsive" alt=""/></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <img src="img/imac-slider.png" class="img-responsive" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 half-column set-right">
+                    <div class="half-col-containt">
+                        <div class="heading">
+                            <h5>Why us?</h5>
+
+                            <p>
+                                Top reasons you should choose us.
+                            </p>
+                            <span></span>
+                        </div>
+                        <ul class="feature-list">
+                            <li>
+                                <span class="icon-screen-desktop icon-2x icon-color icon-left"></span>
+                                <h5>Develop once deploy all</h5>
+
+                                <p>
+                                    Every popular device supports JavaScript, from your mobile iOS/Android devices to
+                                    your iMac/Windows 10 Desktop. Because of this, every application we build is
+                                    capable of running on any device.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="icon-wrench icon-2x icon-color icon-left"></span>
+                                <h5>Fast development</h5>
+
+                                <p>
+                                    We know your crunching time to get your vision out into the real world before
+                                    someone else does. Thats why we will never take more then 90 days to develop even
+                                    the most sophisticated applications, whereas our competitors turnaround time is
+                                    30-180 days.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="icon-chemistry icon-2x icon-color icon-left"></span>
+                                <h5>Flexible payment options</h5>
+
+                                <p>
+                                    We understand that as a startup you may hit a few bumps in the road. We offer
+                                    flexible payment options to help you stay on your feet.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="icon-envelope-letter icon-2x icon-color icon-left"></span>
+                                <h5>Bug free promise</h5>
+
+                                <p>
+                                    Every application we build is protected by our 5 year "Bug free promise". No bug in
+                                    your application will be found, and if found it will be exterminated for no charge
+                                    even after the completion of the project.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="icon-notebook icon-2x icon-color icon-left"></span>
+                                <h5>Family owned and operated</h5>
+
+                                <p>
+                                    Because who doesn't like a family owned an operated business? Always loyal, always
+                                    on time.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End why us -->
+
+    <!-- Start work it -->
+    <div id="workit">
+        <div class="parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center marginbot20">
+                        <h5>How does it work?</h5>
+
+                        <p>Most software companies take your idea, does some designs, show it to you, you agree, they
+                            make you pay and if your lucky you will get some updates in the beginning middle and end of
+                            the development process. Here's how we do things.</p>
+                    </div>
+                    <div class="col-md-4 workit-box">
+                        <span class="icon-present icon-2x icon-color icon-left"></span>
+                        <h6>Step 1: Idea</h6>
+
+                        <p>You tell us your idea. What you want it to do, look like and who you want to target as your
+                            users.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div class="col-md-4 workit-box">
+                        <span class="icon-settings icon-2x icon-color icon-left"></span>
+                        <h6>Step 2: Scope & Quote</h6>
+
+                        <p>We create a plan of action, compile a list of features for your project, give you some design
+                            ideas and give you a quote with a project completion date</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div class="col-md-4 workit-box">
+                        <span class="icon-cup icon-2x icon-color icon-left"></span>
+                        <h6>Step 3: Approve & Pay</h6>
+
+                        <p>Once everything is approved your ready to start we'll collect a desposit and get started on
+                            your project.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+                <div class="row margintop20">
+                    <div class="col-md-4 col-lg-offset-2 workit-box">
+                        <span class="icon-cup icon-2x icon-color icon-left"></span>
+                        <h6>Step 4: Receive Account</h6>
+
+                        <p>Every project we start gets access to our client portal where you will track the progress of
+                            your project, make payments, track issues and even view your app analytic data</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End work it -->
+
+    <!-- Start pricing -->
+    <section id="pricing" class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="heading centered">
+                        <h5>Pricing</h5>
+
+                        <p>
+                            Choose a development package
+                        </p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="pricing-wrapper">
+                        <div class="pricing-head">
+                            <span class="pricing-price">$65</span><br/>
+                            <sup>per hour</sup>
+                            <h4>Simple</h4>
+
+                            <p>For small businesses just looking to hop on the band wagon. From simple landing pages to
+                                e-commerce sites.</p>
+                        </div>
+                        <div class="pricing-containt">
+                            <ul>
+                                <li><i class="fa fa-check"></i> Simple Websites</li>
+                                <li><i class="fa fa-check"></i> CMS</li>
+                                <li><i class="fa fa-check"></i> Blog</li>
+                                <li><i class="fa fa-check"></i> E-commerce</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-bottom">
+                            <a href="#quote" class="btn btn-primary">Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="pricing-wrapper">
+                        <div class="pricing-head">
+                            <span class="pricing-price">$115</span><br/>
+                            <sup>per hour</sup>
+                            <h4>Sophisticated</h4>
+
+                            <p>Developed using outside frameworks to develop your application, such as AngularJS,
+                                EmberJS or SailsJS. When building an application that you wish to hire your own in house
+                                developers.</p>
+                        </div>
+                        <div class="pricing-containt">
+                            <ul>
+                                <li><i class="fa fa-check"></i> Mobile Apps</li>
+                                <li><i class="fa fa-check"></i> Web Apps</li>
+                                <li><i class="fa fa-check"></i> Games</li>
+                                <li><i class="fa fa-check"></i> Enterprise Software</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-bottom">
+                            <a href="#quote" class="btn btn-primary">Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End pricing -->
+
+    <!-- Start subscribe -->
+    <div id="subscribe" class="dark-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <h5>Stay up to date with us</h5>
+
+                    <p>
+                        Sign up for our newsletter and receive emails about all of our clients new and upcoming
+                        releases, while getting early beta access to some of the most hottest games and applications.
+                    </p>
+
+                    <form>
+                        <fieldset class="subscribe-form">
+                            <input class="subscribe" type="text" placeholder="Enter your email address">
+                            <button class="btn-subscribe" type="button"><i class="fa fa-paper-plane"></i></button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End subscribe -->
+
+    <!-- Start quote -->
+    <section id="quote" class="half-wrapper">
+        <div class="container half-full">
+            <div class="row">
+                <div class="col-md-6 half-column set-left">
+                    <div class="half-col-containt">
+                        <div class="heading">
+                            <h5>Get a quote!</h5>
+
+                            <p>
+                                Got an idea you want to bring to reality? Let us know and we'll get back to you within
+                                24 hours, any day of the week. Software doesn't sleep, so neither do we!
+                            </p>
+                            <span></span>
+                        </div>
+                        <form id="quoteform" method="post" class="validateform"
+                              name="leaveQuote">
+                            <div class="clearfix"></div>
+                            <div id="sendmessage">
+                                <div class="alert alert-info marginbot35">
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                    <strong>Your message has been sent. Thank you!</strong><br/>
+                                </div>
+                            </div>
+                            <ul class="listForm">
+                                <li>
+                                    <label>Name :</label>
+                                    <input class="form-control input-name input-lg" type="text" name="name"
+                                           data-rule="maxlen:4" data-msg="Required field"
+                                           placeholder="Enter your full name . . ."/>
+
+                                    <div class="validation"></div>
+                                </li>
+                                <li>
+                                    <label>Email :</label>
+                                    <input class="form-control input-email input-lg" type="text" name="email"
+                                           data-rule="email" data-msg="Please enter a valid email"
+                                           placeholder="Enter your email address . . ."/>
+
+                                    <div class="validation"></div>
+                                </li>
+                                <li>
+                                    <label>Idea :</label>
+                                    <textarea class="form-control input-lg" rows="8" name="message" data-rule="required"
+                                              data-msg="Please write something for us"
+                                              placeholder="Write something for us . . ."></textarea>
+
+                                    <div class="validation"></div>
+                                </li>
+                                <li>
+                                    <input type="submit" value="Send message" class="btn btn-primary" name="Submit"/>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 half-column set-right">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End quote -->
+
+    <div class="clearfix"></div>
+
+    <!-- Start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 widget">
+                    <h5>About us</h5>
+
+                    <p>
+                        NodeGeeks is a small software development company based out of Fresno CA, and Colorado Springs
+                        CO. Focusing on pure JavaScript and NodeJS development, allowing your applications to be cross
+                        platform compatible anywhere, anytime, for less then what you would pay to have then developed
+                        in there Native Languages.
+                    </p>
+                    <ul class="social-link">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 widget">
+                    <h5>Browse</h5>
+                    <ul class="footer-link">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Testimony</a></li>
+                        <li><a href="#">Our team</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Site map</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Last from blog</h5>
+                    <ul class="recent">
+                        <li>
+                            <a href="#"><img src="img/blog/thumbnail/thumb01.jpg" class="alignleft" alt=""/></a>
+                            <h6><a href="#">Est quis urbanitas at</a></h6>
+
+                            <p>
+                                Est quis urbanitas at honestatis sea in utamur offendit ei nec.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/blog/thumbnail/thumb02.jpg" class="alignleft" alt=""/></a>
+                            <h6><a href="#">Sumo nobis sit ut sed</a></h6>
+
+                            <p>
+                                Rebum possit nec cu, graeci lobortis ad vix in modus zril per.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 widget">
+                    <h5>latest tweet</h5>
+
+                    <div id="tweecool"></div>
+                </div>
+            </div>
+        </div>
+        <div class="subfooter">
+            <p>2015 &copy; Copyright <a href="http://nodegeeksllc.com/">NodeGeeks LLC.</a> All rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- End footer -->
+</div>
+<!-- End wrapper -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]>
+<script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- Fixed navigation -->
+<script src="js/navigation/waypoints.min.js"></script>
+<script src="js/navigation/navbar.js"></script>
+
+<!-- vegas -->
+<script src="js/vegas/jquery.vegas.min.js"></script>
+<script src="js/vegas/setting.js"></script>
+
+<!-- parallax -->
+<script src="js/parallax/jquery.parallax-1.1.3.js"></script>
+<script src="js/parallax/setting.js"></script>
+
+<!-- Owl carousel -->
+<script src="js/owlcarousel/owl.carousel.js"></script>
+<script src="js/owlcarousel/setting.js"></script>
+
+<!-- flexslider -->
+<script src="js/flexslider/jquery.flexslider.js"></script>
+<script src="js/flexslider/setting.js"></script>
+
+<!-- diamonds -->
+<script src="js/diamonds/jquery.diamonds.js"></script>
+<script src="js/diamonds/setting.js"></script>
+
+<!--[if lte IE 9]>
+<script src="js/tweecool/jquery.xdomainrequest.min.js"></script>
+<![endif]-->
+
+<!-- Twitter Feed -->
+<script src="js/tweecool/tweecool.js"></script>
+<script src="js/tweecool/setting.js"></script>
+
+<!-- Contact validation -->
+<script src="js/validation.js"></script>
+
+<!-- JavaScript totop -->
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/totop/jquery.ui.totop.js"></script>
+<script src="js/totop/setting.js"></script>
+
+<!-- custom javascript -->
+<script src="js/custom.js"></script>
+
+</body>
+</html>
