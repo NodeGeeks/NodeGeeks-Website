@@ -25,7 +25,7 @@ $(document).ready(function () {
             })
         })
     };
-    $('#GoToHome, #GoToDescription, #GoToAbout, #GoToFeatures, #GoToBlog, #GoToPricing, #GoToContact').scrollTo({speed: 1400});
+    $('.slideToHome, .slideToDescription, .slideToAbout, .slideToWhyUs, .slideToPricing, .slideToContact').scrollTo({speed: 1400});
     headerWrapper = parseInt($('.navbar').height());
     offsetTolerance = 89;
     $(window).scroll(function () {

@@ -274,8 +274,8 @@ Navigation
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:active {
-    color: #fff;
-    border-top: 2px solid #fff;
+    color: #DADADA;
+    border-top: 2px solid #DADADA;
 }
 
 .navbar-default .navbar-nav > li > a.login {
@@ -301,7 +301,7 @@ Navigation
 .top-nav-collapse .navbar-nav > li > a.login:active,
 .static-nav-collapse .navbar-nav > li > a.login:focus,
 .top-nav-collapse .navbar-nav > li > a.login:focus {
-    color: #fff;
+    color: #DADADA;
 }
 
 .navbar-default .navbar-nav li a.selected,
@@ -312,8 +312,8 @@ Navigation
 .navbar-default .navbar-nav .active a:focus,
 .navbar-default .navbar-nav .dropdown.active a:focus {
     background: none;
-    color: #fff;
-    border-top: 2px solid #fff;
+    color: #DADADA;
+    border-top: 2px solid #DADADA;
 }
 
 .dropdown-menu {
